@@ -13,3 +13,21 @@ toggleButton.addEventListener('click', () => {
 		}
 	})
 })
+
+
+const bubbleDiv = document.querySelector('.bubbling')
+const bubbleSection = document.querySelector('.bubbling > section')
+const bubbleButton = document.querySelector('.bubbling > section > button')
+
+// Mål: klick på knappen ska bara hända på knappen
+// Klick på section ska även hända på div
+bubbleDiv.addEventListener('click', () => {
+	console.log('Klickade på div');
+})
+bubbleSection.addEventListener('click', () => {
+	console.log('Klickade på section');
+})
+bubbleButton.addEventListener('click', event => {
+	event.stopPropagation()
+	console.log('Klickade på button');
+})

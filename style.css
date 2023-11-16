@@ -25,3 +25,15 @@
 .highlight {
 	background-color: rgb(207, 183, 79);
 }
+
+.bubbling {
+	margin-top: 1em;
+	border: 1px solid darkgray;
+	padding: 1em;
+	background-color: rgb(128, 128, 128);
+}
+.bubbling > section {
+	border: 1px solid darkgray;
+	padding: 1em;
+	background-color: rgb(169, 164, 164);
+}
