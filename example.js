@@ -31,3 +31,29 @@ bubbleButton.addEventListener('click', event => {
 	event.stopPropagation()
 	console.log('Klickade på button');
 })
+
+
+
+// Prevent default
+const nameInput = document.querySelector('#nameInput')
+
+// input, change, keydown, keyup
+nameInput.addEventListener('input', event => {
+	console.log('input event: ', event.data, event.target.value);
+})
+nameInput.addEventListener('change', event => {
+	console.log('change event: ', event.target.value);
+})
+nameInput.addEventListener('keydown', event => {
+	console.log(`keydown event: code=${event.code}, key=${event.key}, target value=${event.target.value}. `);
+	if( event.target.value.length < 1 ) {
+		console.log('Namnfältet är tomt');
+		event.preventDefault()
+		event.target.value = event.key.toUpperCase()
+	}
+	
+	if( event.key === 'f' ) {
+		event.preventDefault()
+		console.log('keydown: Prevented default');
+	}
+})
