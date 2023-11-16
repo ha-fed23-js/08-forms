@@ -37,3 +37,39 @@
 	padding: 1em;
 	background-color: rgb(169, 164, 164);
 }
+
+
+
+/* Profile */
+* { box-sizing: border-box; }
+.profile {
+	background-color: rgb(27, 27, 27);
+}
+.profile-header {
+	background-color: rgb(40, 40, 163);
+	height: 4em;
+	border-radius: 0.5em 0.5em 0 0;
+}
+.profile-header img {
+	height: 6em;
+	width: 6em;
+	border-radius: 100%;
+	margin-left: 1em;
+	margin-top: 1.3em;
+	border: 0.4em solid rgb(40, 40, 40);
+}
+.profile-body {
+	background-color: rgb(40, 40, 40);
+	color: rgb(227, 227, 227);
+	font-family: Arial;
+	padding: 4em 1em 1em 1em;
+}
+.profile-body h1 {
+	margin: 0;
+	font-size: 110%;
+}
+.profile-body .content {
+	background-color: rgb(27, 27, 27);
+	border-radius: 0.5em;
+	padding: 0.6em;
+}
