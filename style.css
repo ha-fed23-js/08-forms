@@ -1,1 +1,21 @@
 /* övning 9.6 */
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+.name-tag-form > input {
+	padding: 0.25em;
+}
+.name-tag-form > * {
+	margin: 0.4em 0;
+}
+
+#name-tag {
+	border: 1px solid black;
+	padding: 1em;
+	border-radius: 0.5em;
+	margin: 1em 3em 0 3em;
+	text-align: center;
+	font-family: "Arial";
+}
